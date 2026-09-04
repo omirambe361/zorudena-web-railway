@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
-ALLOWED_HOSTS = ['zorudena.org','localhost','127.0.0.1',]
+ALLOWED_HOSTS = ['zorudena.org','localhost','127.0.0.1',"web-production-3cd68.up.railway.app",]
 CSRF_TRUSTED_ORIGINS = ['https://zorudena.org',]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
